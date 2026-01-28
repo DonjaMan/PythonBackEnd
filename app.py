@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 import sqlite3
 import hashlib
 import os
-import wraps
+from functools import wraps
 
 API_TOKEN = os.getenv("API_TOKEN")
 
