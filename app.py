@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from functools import wraps
 
 
-
+load_dotenv()
 API_TOKEN = os.getenv("API_TOKEN")
 
 app = Flask(__name__)
