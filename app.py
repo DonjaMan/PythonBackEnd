@@ -2,7 +2,8 @@ from flask import Flask, jsonify, request
 import sqlite3
 import hashlib
 import os
-import dotenv
+from dotenv import load_dotenv
+load_dotenv()
 from functools import wraps
 
 
