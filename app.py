@@ -4,7 +4,7 @@ import hashlib
 import os
 from dotenv import load_dotenv
 from functools import wraps
-
+from flask_cors import CORS
 
 load_dotenv()
 API_TOKEN = os.getenv("API_TOKEN")
