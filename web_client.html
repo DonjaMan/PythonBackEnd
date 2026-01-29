@@ -49,14 +49,14 @@
     <div id="registerMessage"></div>
 
     <script>
-        const BASE_URL = "http://pythonbackenddonja.onrender.com";
+        const BASE_URL = "https://pythonbackenddonja.onrender.com";
 
         function fetchProducts() {
             document.getElementById("products").innerText = "Loading...";
             fetch(`${BASE_URL}/products`)
                 .then(res => res.json())
                 .then(data => {
-                    const output = data.map(p => `${p.name} - ${p.price}`).join("<br>");
+                    const output = data.map(p => `${p.name} - $${p.price}`).join("<br>");
                     document.getElementById("products").innerHTML = output;
                 })
                 .catch(err => {
